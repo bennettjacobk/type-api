@@ -15,6 +15,7 @@ export const connectionOptions: ConnectionOptions = {
   dropSchema: isTestDb,
 
   synchronize: false,
+  ssl: settings.dbIsSSL,
   migrationsRun: true,
   entityPrefix: settings.dbTablePrefix,
   entities: [__dirname + '/../../**/*.entity.?s'],

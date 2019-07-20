@@ -36,6 +36,7 @@ export default {
    * More database settings are in /ormconfig.js
    */
   dbUrl: process.env.DATABASE_URL,
+  dbIsSSL: process.env.DATABASE_IS_SSL,
   dbTestUrl: process.env.DATABASE_TEST_URL,
   dbTablePrefix: 'app_',
   dbSeeds: 'src/api/data/**/*.seed.ts',
